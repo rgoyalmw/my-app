@@ -1,11 +1,13 @@
 import './App.css';
-import Colourize from './Colourize';
+import './searchForm.css'
+// import Colourize from './Colourize';
+import SearchForm from './SearchForm';
 
 function App() {
 
   return (
     <div className="App">
-      <Colourize/>
+      <SearchForm/>
     </div>
     
   );
