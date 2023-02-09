@@ -1,6 +1,6 @@
 import { useState } from "react";
 import GitHubUserData from "./GitHubUserData";
-
+import React from "react";
 const SearchForm = () => {
 
     const [userName,setUserName] = useState("");

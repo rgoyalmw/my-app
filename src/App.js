@@ -1,13 +1,26 @@
+import React from 'react';
+
 import './App.css';
-import './searchForm.css'
-// import Colourize from './Colourize';
-import SearchForm from './SearchForm';
+import './styles/searchForm.css'
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import Colourize from './components/Colourize';
+import SearchForm from './components/SearchForm';
+import Navbar from './components/Navbar';
 
 function App() {
 
   return (
     <div className="App">
-      <SearchForm/>
+      
+      <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<SearchForm />}></Route>
+        <Route path='/colour' element={<Colourize/>}></Route>
+      </Routes>
+      </BrowserRouter>
     </div>
     
   );

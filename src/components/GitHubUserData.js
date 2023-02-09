@@ -1,4 +1,5 @@
-import useGitHub from "./hooks/useGitHub";
+import useGitHub from "../hooks/useGitHub";
+import React from "react";
 
 const GitHubUserData = ({userName}) => {
     // https://api.github.com/users/username
